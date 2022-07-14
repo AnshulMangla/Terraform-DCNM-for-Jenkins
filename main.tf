@@ -18,14 +18,14 @@ terraform {
 ## NDFC Provider ##
 provider "dcnm" {
     username = "admin"
-    password = "pwdxxx"
-    url      = "https://10.X.X.X"
+    password = "123Cisco123"
+    url      = "https://10.67.29.140"
     insecure = true
     platform = "nd"
 }
 
 resource "dcnm_vrf" "test-vrf" {
-  fabric_name = "Test"
+  fabric_name = "CX_Test_Fabric"
   name = "Test_VRF"
   description = "This vrf is created by terraform"
   deploy = false
