@@ -31,13 +31,13 @@ resource "dcnm_vrf" "test-vrf" {
   deploy = false
 }
 
-#resource "dcnm_template" "example1" {
-#  name = "test"
-#  content = file("template.txt")
-#  description = "Test"
-#  supported_platforms = ["N9K","N3K"]
-#  template_type="POLICY"
-#  template_content_type="TEMPLATE_CLI"
-#  tags="tag1"
-#  template_sub_type="VXLAN"
-#}
+resource "dcnm_template" "example1" {
+  name = "test"
+  content = file("template.txt")
+  description = "Test"
+  supported_platforms = ["N9K","N3K"]
+  template_type="POLICY"
+  template_content_type="TEMPLATE_CLI"
+  tags="tag1"
+  template_sub_type="VXLAN"
+}
